@@ -7,7 +7,6 @@ spec:
   repo: https://github.com/hwchiu/fleet_demo.git
   branch: master
   paths:
-    - repos/
     - workspace/
   targets:
     - clusterSelector: {}
