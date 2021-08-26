@@ -2,13 +2,11 @@ kind: GitRepo
 apiVersion: fleet.cattle.io/v1alpha1
 metadata:
   name: fleet-demo
-  namespace: fleet-local
+  namespace: prod
 spec:
   repo: https://github.com/hwchiu/fleet_demo.git
   branch: master
   paths:
-    - workspace/
-    - repos/testing
-    - repos/prod
+    - app/basic
   targets:
     - clusterSelector: {}
