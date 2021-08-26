@@ -1,7 +1,7 @@
 kind: GitRepo
 apiVersion: fleet.cattle.io/v1alpha1
 metadata:
-  name: fleet-demo
+  name: prod-app
   namespace: prod
 spec:
   repo: https://github.com/hwchiu/fleet_demo.git
