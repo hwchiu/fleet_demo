@@ -1,0 +1,12 @@
+kind: GitRepo
+apiVersion: fleet.cattle.io/v1alpha1
+metadata:
+  name: repos
+  namespace: fleet-local
+spec:
+  repo: https://github.com/hwchiu/fleet_demo.git
+  branch: master
+  paths:
+    - workspace/
+  targets:
+    - clusterSelector: {}
