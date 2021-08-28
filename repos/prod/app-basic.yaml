@@ -8,5 +8,6 @@ spec:
   branch: master
   paths:
     - app/basic
+    - app/basic_overlay
   targets:
     - clusterSelector: {}

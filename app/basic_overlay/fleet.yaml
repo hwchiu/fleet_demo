@@ -1,0 +1,26 @@
+namespace: basicoverlay
+targetCustomizations:
+- name: dev
+  clusterSelector:
+    matchLabels:
+      management.cattle.io/cluster-display-name: ithome-dev
+  yaml:
+    overlays:
+    - dev
+
+- name: it
+  clusterSelector:
+    matchLabels:
+      management.cattle.io/cluster-display-name: rke-it
+  yaml:
+    overlays:
+    - it
+
+- name: qa
+  clusterSelector:
+    matchLabels:
+      management.cattle.io/cluster-display-name: rke-qa
+  yaml:
+    overlays:
+    - qa
+
