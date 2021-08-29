@@ -8,7 +8,8 @@ targetCustomizations:
         enabled: true
         hosts:
           - host: rancher.hwchiu.com
-            path: /testing
+            paths:
+              - /testing
   clusterSelector:
     matchLabels:
       env: prod
