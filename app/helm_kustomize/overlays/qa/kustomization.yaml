@@ -1,2 +1,2 @@
-patches:
+resources:
 - deployment.yaml
