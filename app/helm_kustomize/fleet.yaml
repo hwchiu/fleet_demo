@@ -3,6 +3,7 @@ helm:
   chart: https://github.com/rancher/fleet-examples/releases/download/example/guestbook-0.0.0.tgz
   values:
     replicas: 3
+targetCustomizations:
 - name: dev
   clusterSelector:
     matchLabels:
