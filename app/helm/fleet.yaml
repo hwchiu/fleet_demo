@@ -3,7 +3,9 @@ targetCustomizations:
 - name: prod
   helm:
     values:
-      replicaCount: 2
+      replicaCount: 3
+      ingress:
+        enabled: true
   clusterSelector:
     matchLabels:
       env: prod
@@ -12,6 +14,4 @@ targetCustomizations:
   helm:
     values:
       replicaCount: 2
-      ingress:
-        enabled: true
   clusterGroup: testing-group
