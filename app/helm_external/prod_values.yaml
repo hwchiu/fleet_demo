@@ -1,0 +1,2 @@
+serviceType: NodePort
+replicas: 3

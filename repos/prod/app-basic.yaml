@@ -11,5 +11,6 @@ spec:
     - app/basic_overlay
     - app/kustomize
     - app/helm
+    - app/helm_external
   targets:
     - clusterSelector: {}
