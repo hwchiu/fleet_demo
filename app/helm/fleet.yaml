@@ -6,6 +6,9 @@ targetCustomizations:
       replicaCount: 3
       ingress:
         enabled: true
+        hosts:
+          - host: rancher.hwchiu.com
+            path: /testing
   clusterSelector:
     matchLabels:
       env: prod
