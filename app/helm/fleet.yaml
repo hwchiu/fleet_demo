@@ -1,0 +1,17 @@
+namespace: helminternal
+targetCustomizations:
+- name: prod
+  helm:
+    values:
+      replicaCount: 2
+  clusterSelector:
+    matchLabels:
+      env: prod
+
+- name: test
+  helm:
+    values:
+      replicaCount: 2
+      ingress:
+        enabled: true
+  clusterGroup: testing-group
