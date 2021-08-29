@@ -9,5 +9,6 @@ spec:
   paths:
     - app/basic
     - app/basic_overlay
+    - app/kustomize
   targets:
     - clusterSelector: {}
