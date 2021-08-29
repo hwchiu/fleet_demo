@@ -1,0 +1,2 @@
+patches:
+- redis-slave-deployment.yaml

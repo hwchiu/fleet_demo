@@ -1,0 +1,25 @@
+namespace: helmkustomize
+helm:
+  chart: https://github.com/rancher/fleet-examples/releases/download/example/guestbook-0.0.0.tgz
+  values:
+    replicas: 3
+- name: dev
+  clusterSelector:
+    matchLabels:
+      management.cattle.io/cluster-display-name: ithome-dev
+  kustomize:
+    dir: overlays/dev
+
+- name: it
+  clusterSelector:
+    matchLabels:
+      management.cattle.io/cluster-display-name: rke-it
+  kustomize:
+    dir: overlays/it
+
+- name: qa
+  clusterSelector:
+    matchLabels:
+      management.cattle.io/cluster-display-name: rke-qa
+  kustomize:
+    dir: overlays/qa

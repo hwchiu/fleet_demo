@@ -12,5 +12,6 @@ spec:
     - app/kustomize
     - app/helm
     - app/helm_external
+    - app/helm_kustomize
   targets:
     - clusterSelector: {}
