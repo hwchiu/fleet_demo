@@ -1,1 +1,2 @@
+serviceType: ClusterIP
 replicas: 2
