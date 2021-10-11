@@ -1,4 +1,4 @@
-namespace: helminternal
+defaultNamespace: helminternal
 targetCustomizations:
 - name: prod
   helm:
